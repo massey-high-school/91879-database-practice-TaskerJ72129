@@ -10,12 +10,12 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner"
-        "main"
-        "footer";
+        "banner banner"
+        "side main"
+        "footer footer";
         grid-gap: 4px;
     
 }
@@ -35,11 +35,11 @@ body {
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #16B1C2;  /* darkish light blue */
+    background-color: #169ac2;  /* darkish light blue */
 }
 
 /* Set font on dark areas to white */
-.logo, .banner, .side, .footer {
+.logo, .banner, .footer {
     color: #fff;
 }
 
@@ -62,6 +62,12 @@ body {
     text-align: center;
 }
 
+.side{
+    grid-area: side;
+    background-color: #63b5c9; /* slightly darker than very light blue */
+    color: #000;
+}
+
 .main {
     grid-area: main;
     background-color: #E6F9FA;  /* very light slightly dull blue */
@@ -81,10 +87,14 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation Links */
-.nav a {font-weight: bold;}
+.nav a {font-weight: bold; text-decoration: none;}
 .nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
 .nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
 
+/* side links */
+a.side{font-weight: bold; text-decoration: none;}
+a.side:link, .nav a:visited {color:#AA0000 }
+a.side:hover {color:#604830 ;}
 
 /* links in page */
 a {font-weight: bold;}
