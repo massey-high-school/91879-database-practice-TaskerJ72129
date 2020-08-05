@@ -1,8 +1,11 @@
-<?php
-    include "topbit.php";
+<?php include "topbit.php";
     
-    $showall_squl="";
-    $showaal
+$showall_squl="SELECT *
+FROM `2020_L1_Prac_JamTas`
+ORDER BY `2020_L1_Prac_JamTas`.`Title` ASC";
+$showall_query=mysqli_query($dbconnect, $showall_sql;
+$showall_rs=mysqli_fetch_assoc($showall_query);
+$count=mysqli_num_rows($showall_query; 
     
 ?>
 
@@ -37,7 +40,7 @@
             </div>
 
             
-        </div>    <!-- / main -->
+        </div>    <!-- / end restults -->
 
 
 <?php
