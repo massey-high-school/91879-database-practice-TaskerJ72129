@@ -27,15 +27,14 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
-    background-color: #ddd;
+    border-radius: 10px;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #169ac2;  /* darkish light blue */
+    background-color: #61496b;  /* dark grayee purple */
 }
 
 /* Set font on dark areas to white */
@@ -46,7 +45,7 @@ body {
 /* Area specifics */
 
 .logo {
-    padding: 0;
+    padding-right: 5px;
     float: left;
     
 }
@@ -78,6 +77,10 @@ body {
 .footer {
     grid-area: footer;
     text-align: right;
+}
+
+/* vertically center stuff */
+
 }
 
 /* -000- End of area styling -000- */
@@ -116,9 +119,6 @@ a:hover{color: #000;}    /* Black*/
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
 }
 
-.center_image {
-    text-align: center;
-}
 
 /* Sub Heading Formatting */
 .sub_heading {
@@ -127,6 +127,14 @@ a:hover{color: #000;}    /* Black*/
     font-weight: bold;
 }
 
+/* Results Box Formatting */
+.results {
+    background-color: #e7c6f5; /* light purle pinky */  
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    
+}
 
 
 

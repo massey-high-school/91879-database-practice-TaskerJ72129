@@ -4,12 +4,12 @@
 
 <?php
     
-    session_start()
+    session_start();
     include("config.php");
     
     // Connect to database
     
-    $dbconnect=mysqli_connect(DB_HOST, DB_SERNAME, DB_PASSWORD, DB_NAME)
+    $dbconnect=mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
     
     if (mysqli_connect_errno())
         
@@ -48,12 +48,15 @@
         <!-- logo image linking to home page goes here -->
         <a href="index.php">
             <div class="box logo"  title="Logo - Click here to go to the Home Page">
-            <img class="img-circle" src="images/gen_logo.png" width="150" height="150" alt="generic logo" />
+            <img class="img-circle" src="Images/logo_book.png" width="150" height="150" alt="books" />
             
             </div>    <!-- / logo -->
         </a>
             
-            <h1>reading</h1>
+            
+            <div>
+                <h1>Reading</h1>
+            </div>
         </div>    <!-- / banner -->
         
         
