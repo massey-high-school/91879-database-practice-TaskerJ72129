@@ -6,6 +6,7 @@
     
     session_start();
     include("config.php");
+    include("functions.php"); // iclude data sanitising...
     
     // Connect to database
     
@@ -63,14 +64,28 @@
     <!-- side bar -->
     <div class ="box side">
         <h2>Search | <a class="side" href="showall.php">Show All</a></h2>
-            <i>Type part of the title / author name if desired</i>
+        <i>Type part of the title / author name if desired</i>
+
+        <hr />
+        <!-- Start of Title Search -->
+
+        <form method="post" action="title_search.php"
+        enctype="multipart/form-data" >
             
-            <hr />
+            <input class="search" trpe="text" name="title" size="40" value=""
+            required placeholder="Title..." />
             
-        Title Search<br />
-        Author Search<br />
-        Genre Search<br />
-        Rating Search
+            <input class="submit" type="submit" name="find_title"
+                   value="Search" />
+
+        </form>
+                  
+            <!-- End of Title Search -->
+
+
+            Author Search<br />
+            Genre Search<br />
+            Rating Search
         
             
-        </div>
+        </div> <!-- / side bar -->
