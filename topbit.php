@@ -72,7 +72,7 @@
         <form method="post" action="title_search.php"
         enctype="multipart/form-data" >
             
-<<<<<<< HEAD
+
             <input class="search" trpe="text" name="title" size="40" value=""
             required placeholder="Title..." />
             
@@ -82,32 +82,28 @@
         </form>
                   
             <!-- End of Title Search -->
+        
+            <!-- Start of Author Search -->
+
+        <form method="post" action="author_search.php"
+        enctype="multipart/form-data" >
+            
+
+            <input class="search" trpe="text" name="author" size="40" value=""
+            required placeholder="Author..." />
+            
+            <input class="submit" type="submit" name="find_author"
+                   value="Search" />
+
+        </form>
+                  
+        <!-- End of Author Search -->
 
 
-            Author Search<br />
+            <hr />
             Genre Search<br />
             Rating Search
-=======
+
             <hr />
-        <!-- Start of Title Search -->
-        
-        <form method="post" action="title_search.php"
-        enctype="multipart/form-data ">
-            
-            <input class="search" type="text" size="40" value=""
-            required placeholder="Title..." />
-        
-            <input class="submit" type="submit" name="find_title"\
-                   value="Search" />
-            
-        </form>
-        <!-- End of Title Search -->
-        
-        <hr />
-        Author Search<br />
-        Genre Search<br />
-        Rating Search
->>>>>>> 24ace550bd5303d268f096dd7d904d94fcfc99c8
-        
-            
+
         </div> <!-- / side bar -->

@@ -136,7 +136,7 @@ a:hover{color: #000;}    /* Black*/
     
 }
 
-<<<<<<< HEAD
+
 /* Error Box formatting */
 .error{
     background-color: #ffe0ed; /* pale pink */
@@ -145,13 +145,10 @@ a:hover{color: #000;}    /* Black*/
     border-radius: 5px;
     padding: 20px;
 }
-/* form formatting */
 
-.search{
-=======
+
 /* form formatting */
 .search {
->>>>>>> 24ace550bd5303d268f096dd7d904d94fcfc99c8
     width: 200px
 }
 
