@@ -1,18 +1,17 @@
 <?php include "topbit.php";
 
 // if find button pushed...
-if(isset($_POST['find_author']))
+if(isset($_POST['find_genre']))
     
 {
     
 // Retrieves author and sanitises it.
-$author=test_input(mysqli_real_escape_string($dbconnect,
-$_POST['author']));
+$genre=test_input(mysqli_real_escape_string($dbconnect,
+$_POST['genre']));
     
 $find_sql="SELECT *
 FROM `2020_L1_Prac_JamTas`
-WHERE `Author` LIKE '%$author%'
-LIMIT 0 , 30";
+WHERE `Genre` LIKE '%$genre%'";
 $find_query=mysqli_query($dbconnect, $find_sql);
 $find_rs=mysqli_fetch_assoc($find_query);
 $count=mysqli_num_rows($find_query); 
@@ -24,7 +23,7 @@ $count=mysqli_num_rows($find_query);
         
         <div class="box main">
             
-            <h2>Author Search</h2>
+            <h2>Genre Search</h2>
             
             <?php
             
@@ -56,8 +55,8 @@ $count=mysqli_num_rows($find_query);
                 <!-- Results go here -->
                 <div class="results">
 
-                    <p>author: <span class="sub_heading"><?php echo
-                    $find_rs['author']; ?></span></p>
+                    <p>Title: <span class="sub_heading"><?php echo
+                    $find_rs['Title']; ?></span></p>
 
                     <p>Author: <span class="sub_heading"><?php echo
                     $find_rs['Author']; ?></span></p>

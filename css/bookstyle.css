@@ -96,7 +96,7 @@ h1, h2, h3, h4 {
 
 /* side links */
 a.side{font-weight: bold; text-decoration: none;}
-a.side:link, .nav a:visited {color:#AA0000 }
+a.side:link, .nav a:visited {color:#ebcc34 }
 a.side:hover {color:#604830 ;}
 
 /* links in page */

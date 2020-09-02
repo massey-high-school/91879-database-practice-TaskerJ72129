@@ -98,10 +98,24 @@
         </form>
                   
         <!-- End of Author Search -->
-
-
-            <hr />
-            Genre Search<br />
+   
+        <!-- Statrt of genre Search -->
+        <form method="post" action="genre_search.php"
+        enctype="multipart/form-data" >
+            
+            <select name="genre" required>
+                <option value="" disabled selected>Genre...</option>
+                <option value="Sci Fi">Science Fiction</option>
+                <option value="Historical Fiction">Historical Fiction</option>
+                <option value="Humour">Humour</option>
+                <option value="Non Fiction">Non Fiction</option>
+                
+            </select>
+            
+            <input class="submit" type="submit" name="find_genre"
+                   value="Search" />
+        </form>
+        <!-- End of Genre Search -->   
             Rating Search
 
             <hr />

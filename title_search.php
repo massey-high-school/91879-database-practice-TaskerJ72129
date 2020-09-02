@@ -1,18 +1,17 @@
 <?php include "topbit.php";
 
 // if find button pushed...
-if(isset($_POST['find_author']))
+if(isset($_POST['find_title']))
     
 {
     
-// Retrieves author and sanitises it.
-$author=test_input(mysqli_real_escape_string($dbconnect,
-$_POST['author']));
+// Retrieves title and sanitises it.
+$title=test_input(mysqli_real_escape_string($dbconnect,
+$_POST['title']));
     
 $find_sql="SELECT *
 FROM `2020_L1_Prac_JamTas`
-WHERE `Author` LIKE '%$author%'
-LIMIT 0 , 30";
+WHERE `Title` LIKE '%$title%'";
 $find_query=mysqli_query($dbconnect, $find_sql);
 $find_rs=mysqli_fetch_assoc($find_query);
 $count=mysqli_num_rows($find_query); 
@@ -24,7 +23,7 @@ $count=mysqli_num_rows($find_query);
         
         <div class="box main">
             
-            <h2>Author Search</h2>
+            <h2>Title Search</h2>
             
             <?php
             
