@@ -91,13 +91,13 @@ h1, h2, h3, h4 {
 
 /* Navigation Links */
 .nav a {font-weight: bold; text-decoration: none;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
+.nav a:link, .nav a:visited {color: #edcd3b;} /*orangy yellow */
 .nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
 
 /* side links */
 a.side{font-weight: bold; text-decoration: none;}
-a.side:link, .nav a:visited {color:#ebcc34 }
-a.side:hover {color:#604830 ;}
+a.side:link, .nav a:visited {color:#ebcd3b }/*orangy yellow */
+a.side:hover {color:#604830 ;}/* chocolate brown */
 
 /* links in page */
 a {font-weight: bold;}

@@ -99,7 +99,7 @@
                   
         <!-- End of Author Search -->
    
-        <!-- Statrt of genre Search -->
+        <!-- Start of genre Search -->
         <form method="post" action="genre_search.php"
         enctype="multipart/form-data" >
             
@@ -115,8 +115,32 @@
             <input class="submit" type="submit" name="find_genre"
                    value="Search" />
         </form>
-        <!-- End of Genre Search -->   
-            Rating Search
+        <!-- End of genre Search -->   
+        
+        <!-- Start of Rating Search -->
+        
+        <form method="post" action="rating_search.php" enctype="mulripart/form-data">
+            
+            <select class="half_width" name="amount">
+                <option value="exactly" slected>Exactly...</option>
+                <option value="more" slected>At Least...</option>
+                <option value="less" slected>At Most...</option>
+            </select>
+        
+            <select class="half_width" name="stars">
+                <option value=1>&#9733;</option>
+                <option value=2>&#9733;&#9733;</option>
+                <option value=3>&#9733;&#9733;&#9733;</option>
+                <option value=4>&#9733;&#9733;&#9733;&#9733;</option>
+                <option value=5>&#9733;&#9733;&#9733;&#9733;&#9733;
+                </option>
+                
+            </select>
+        
+                <input type="submit" class="submit" name="find_rating"
+                       value="Search" />
+        
+        </form>
 
             <hr />
 
