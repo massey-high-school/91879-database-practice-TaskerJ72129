@@ -80,9 +80,9 @@ $count=mysqli_num_rows($find_query);
 
                     <p>Author: <span class="sub_heading"><?php echo
                     $find_rs['Author']; ?></span></p>
-
-                    <p>rating: <span class="sub_heading"><?php echo
-                    $find_rs['rating']; ?></span></p>
+                    
+                    <p>Genre: <span class="sub_heading"><?php echo
+                    $find_rs['Genre']; ?></span></p>
 
                     <p>Rating: <span class="sub_heading">
                         

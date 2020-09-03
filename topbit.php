@@ -122,15 +122,15 @@
         <form method="post" action="rating_search.php" enctype="mulripart/form-data">
             
             <select class="half_width" name="amount">
-                <option value="exactly" slected>Exactly...</option>
-                <option value="more" slected>At Least...</option>
-                <option value="less" slected>At Most...</option>
+                <option value="exactly">Exactly...</option>
+                <option value="more" selected>At Least...</option>
+                <option value="less">At Most...</option>
             </select>
         
             <select class="half_width" name="stars">
                 <option value=1>&#9733;</option>
                 <option value=2>&#9733;&#9733;</option>
-                <option value=3>&#9733;&#9733;&#9733;</option>
+                <option value=3 selected>&#9733;&#9733;&#9733;</option>
                 <option value=4>&#9733;&#9733;&#9733;&#9733;</option>
                 <option value=5>&#9733;&#9733;&#9733;&#9733;&#9733;
                 </option>
