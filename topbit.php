@@ -34,6 +34,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
     
     <!-- Edit the name of your style sheet - 'foo' is not a valid name!! -->
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bookstyle.css"> 
     
 </head>
@@ -105,10 +106,28 @@
             
             <select name="genre" required>
                 <option value="" disabled selected>Genre...</option>
-                <option value="Sci Fi">Science Fiction</option>
-                <option value="Historical Fiction">Historical Fiction</option>
-                <option value="Humour">Humour</option>
-                <option value="Non Fiction">Non Fiction</option>
+
+                <?php
+                // retrieve unique values in genre column...
+                $genre_sql="SELECT DISTINCT `Genre`
+                FROM `2020_L1_Prac_JamTas`
+                ORDER BY `Genre` ASC";
+                $genre_query=mysqli_query($dbconnect, $genre_sql);
+                $genre_rs=mysqli_fetch_assoc($genre_query);
+                
+                do{
+                    
+                    ?>
+                
+                <option value="<?php echo $genre_rs['Genre']; ?>"><?php echo $genre_rs['Genre']; ?></option>
+                
+                <?php
+                
+                } // end of genre option retrieval
+                
+                while($genre_rs=mysqli_fetch_assoc($genre_query));
+                
+                ?>
                 
             </select>
             

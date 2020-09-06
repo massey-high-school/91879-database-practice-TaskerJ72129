@@ -149,9 +149,21 @@ a:hover{color: #000;}    /* Black*/
 
 /* form formatting */
 .search {
-    width: 200px
+    width: 200px;
+    padding: 8px 15px;
+    background: #fff;
 }
 
+.submit{
+    font-family: FontAwesome;
+    position: relative;
+    width: 45px;
+    left: -1px;
+    background-color: #636363;
+    color: #d6d6d6;
+    border: 1px solid #636363;
+    border-radius: 0 5px 5px 0;
+}
 
 
 
