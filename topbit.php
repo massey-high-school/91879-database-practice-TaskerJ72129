@@ -28,7 +28,7 @@
     <meta name="author" content="James Tasker">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Book Review Database</title>
+    <title>Reading</title>
     
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
@@ -78,7 +78,7 @@
             required placeholder="Title..." />
             
             <input class="submit" type="submit" name="find_title"
-                   value="Search" />
+                   value="&#xf002;" />
 
         </form>
                   
@@ -90,11 +90,11 @@
         enctype="multipart/form-data" >
             
 
-            <input class="search" trpe="text" name="author" size="40" value=""
+            <input class="search" type="text" name="author" size="40" value=""
             required placeholder="Author..." />
             
             <input class="submit" type="submit" name="find_author"
-                   value="Search" />
+                   value="&#xf002;" />
 
         </form>
                   
@@ -104,7 +104,7 @@
         <form method="post" action="genre_search.php"
         enctype="multipart/form-data" >
             
-            <select name="genre" required>
+            <select class="search" name="genre" required>
                 <option value="" disabled selected>Genre...</option>
 
                 <?php
@@ -132,13 +132,13 @@
             </select>
             
             <input class="submit" type="submit" name="find_genre"
-                   value="Search" />
+                   value="&#xf002;" />
         </form>
         <!-- End of genre Search -->   
         
         <!-- Start of Rating Search -->
         
-        <form method="post" action="rating_search.php" enctype="mulripart/form-data">
+        <form method="post" action="rating_search.php" enctype="multipart/form-data">
             
             <select class="half_width" name="amount">
                 <option value="exactly">Exactly...</option>
@@ -157,7 +157,7 @@
             </select>
         
                 <input type="submit" class="submit" name="find_rating"
-                       value="Search" />
+                       value="&#xf002;" />
         
         </form>
 

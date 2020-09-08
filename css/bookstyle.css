@@ -148,8 +148,14 @@ a:hover{color: #000;}    /* Black*/
 
 
 /* form formatting */
+
+form{
+    width: 250px;
+    margin: 5px;
+}
+
 .search {
-    width: 200px;
+    width: 160px;
     padding: 8px 15px;
     background: #fff;
 }
@@ -165,8 +171,28 @@ a:hover{color: #000;}    /* Black*/
     border-radius: 0 5px 5px 0;
 }
 
+input[type="submit"]:hover {
+    background-color: #000;
+}
+input{
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
+.half_width{
+    width: 80px;
+}
 
+select{
+    outline: 0;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: #878787;
+    width: 200px;
+}
 
 
 
